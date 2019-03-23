@@ -16,6 +16,11 @@ public class LibraryTest {
         Library classUnderTest = new Library();
         assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
     }
+    @Test
+    public void testformatCheck() {
+        Library classUnderTest = new Library();
+        assertEquals(true, classUnderTest.formatCheck("fuck,fuck,math:12,math:12,math:12,math:12"));
+    }
 
     @Test
     public void testMockClass() throws Exception {
